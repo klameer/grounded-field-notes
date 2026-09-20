@@ -5,7 +5,7 @@ Status: Accepted
 
 ## Context
 
-Analysts wanted to add their own commentary to the corpus: "the Q3 dip is the
+I wanted analysts to be able to add their own commentary to the corpus: "the Q3 dip is the
 warehouse move", "ignore the legacy tracker after May". Useful context, but
 a note is an opinion and a spreadsheet is a record. If both enter the same
 retrieval pool with equal weight, an unvalidated note gets cited with the
@@ -43,7 +43,7 @@ see at a glance which kind of source each claim rests on.
   tables.
 - Editing a note is a single row update. Routing notes through the document
   pipeline would have re-ingested on every edit.
-- Images and OCR were assessed and parked at low feasibility for the same
+- I assessed images and OCR and parked them at low feasibility for the same
   reason the fact table was rejected: an OCR'd figure reproduces the
   semantic mis-mapping risk.
 

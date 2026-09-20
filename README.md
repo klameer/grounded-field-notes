@@ -45,21 +45,44 @@ product: [evals/results](evals/results/2026-08-08-board-pack-test-v1.0.1.md).
 1. [ADR 0001: files are the source of truth](docs/adr/0001-files-are-the-source-of-truth.md).
    The decision everything else follows from, and why the obvious design
    (extract every figure into a table) was rejected.
-2. [ADR 0012: the trust chain](docs/adr/0012-trust-chain.md). A citation
+2. [What broke, how I found it, what changed](docs/incidents.md). Eight
+   incidents and the rule each one left behind.
+3. [ADR 0012: the trust chain](docs/adr/0012-trust-chain.md). A citation
    is an audit; a verification is a proof. How every link is checked by
    code.
-3. [The path of one question](docs/architecture/c4-components.md). Sequence
+4. [The path of one question](docs/architecture/c4-components.md). Sequence
    diagram from question to verified answer.
-4. [Board Pack Test results](evals/results/2026-08-08-board-pack-test-v1.0.1.md).
+5. [Board Pack Test results](evals/results/2026-08-08-board-pack-test-v1.0.1.md).
    Including what moved the score 13 to 15 points in one day.
-5. [ADR 0009: pooled tenancy](docs/adr/0009-pooled-tenancy-with-dedicated-as-premium.md).
-   A decision reversed eleven days after it was taken, and what it cost.
+6. [ADR 0009: pooled tenancy](docs/adr/0009-pooled-tenancy-with-dedicated-as-premium.md).
+   A decision I reversed eleven days after taking it, and what it cost.
+
+## What I would do differently
+
+- **Build the eval before the feature, not after.** The retrieval eval
+  took an afternoon and found a reranker that had never run. Every stage
+  that can silently degrade to a no-op should have had a test on day one.
+- **Make evals cheap from the start.** I lost a month of eval discipline
+  because each run cost pounds. The moment they became free I ran them
+  constantly, and quality moved.
+- **Skip the fact-table detour.** I spent the first roadmap building toward
+  a design I already knew from planning-systems work would launder errors.
+  The files-first rule (ADR 0001) should have been the opening decision.
+- **Decide tenancy once.** One instance per customer felt like the honest
+  security answer and lasted eleven days. Pooled with a dedicated premium
+  tier is where it landed and where it should have started.
+- **Treat every empty environment variable as a bug.** A blank boolean
+  cost me 26 days of failed deployments that reported success.
+- **Publish the benchmark on day one.** The Board Pack Test was the most
+  useful thing I built and the last thing I started. Every product change
+  in August came from it.
 
 ## Map
 
 ```
 PROVENANCE.md            what is mine, what is the scaffold, what is absent
 docs/
+  incidents.md           eight things that broke, and the rule each left behind
   adr/                   14 decision records, Nygard format, never edited after acceptance
   architecture/          C4 context, containers, components; ingestion; retrieval and answering
   security/              isolation layers and tests; the PII pipeline

@@ -8,7 +8,7 @@ Status: Accepted
 Chat, sub-agents, metadata extraction and the eval judge all ran through a
 pay-per-token router on a frontier model with an agentic loop. One eval
 question against the hosted demo cost between £1.50 and £4. A full suite
-drained $50 in a day. Evals stopped being something you run casually, which
+drained $50 in a day. Evals stopped being something I ran casually, which
 means they stopped being run.
 
 ## Decision
@@ -41,6 +41,6 @@ single pay-per-token provider with prompt caching (see
 
 ## Alternatives considered
 
-- Top up and carry on. Rejected as a bottomless pit.
+- Top up and carry on. I called it a bottomless pit and stopped.
 - Switch every call to the mini model. Rejected: chat quality on multi-step
   finance questions visibly dropped.

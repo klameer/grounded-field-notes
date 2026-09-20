@@ -6,7 +6,7 @@ Status: Accepted
 ## Context
 
 Asking a model to "only give numbers you can cite" works most of the time.
-Most of the time is not good enough for a board pack. A prompt instruction is
+I have signed off board packs. Most of the time is not good enough. A prompt instruction is
 a request. A check is a guarantee.
 
 ## Decision
@@ -29,7 +29,7 @@ source cell. Years, question numbers and list indices are excluded.
 - Refusal is testable. The eval suite includes questions whose answer is not
   in the corpus, and a digit-free refusal is the passing result.
 - The guard occasionally refuses a correct answer when the model rounds in a
-  way the tolerance table does not cover. Each case is logged and the
+  way the tolerance table does not cover. I log each case and the
   tolerance table grows. A false refusal costs a re-ask. A false pass costs
   trust.
 - The same guard covers every source type added later (analyst notes, web

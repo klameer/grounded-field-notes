@@ -5,7 +5,7 @@ Status: Accepted
 
 ## Context
 
-The original roadmap built toward a dimension-keyed facts table: ingest every
+My original roadmap built toward a dimension-keyed facts table: ingest every
 report, extract every figure into rows keyed by entity, period, measure and
 version, then answer questions from the table. It is the obvious design for a
 finance question-answering system and it is what most "AI for finance" tools
@@ -33,7 +33,7 @@ Any derived structure built for speed is a cache and never a source. It must
 be re-verified against the file at answer time. If the file disagrees, the
 answer refuses.
 
-## Why the fact table was rejected
+## Why I rejected the fact table
 
 Two failure modes disqualify it for a product whose only promise is trust.
 
@@ -45,8 +45,8 @@ into audit-grade confidence, which is worse than no answer.
 
 **A review queue relocates the problem.** The usual fix is a human review
 queue for extracted facts. That turns unbounded parsing complexity into
-unbounded review labour. It is the cost structure of a planning-system
-implementation, and it never ends because the inputs never stop changing.
+unbounded review labour. It is the cost structure of every planning-system
+implementation I have run, and it never ends because the inputs never stop changing.
 
 ## Consequences
 
