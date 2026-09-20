@@ -81,5 +81,5 @@ Tokens per turn average about 25,000, almost all prompt (a sampled turn:
 17,662 prompt, 271 completion). Prompt caching takes about 77 percent of
 that off the bill; see [cost controls](../operations/cost-controls.md).
 
-This is slow for a chatbot and fine for a controller. I do not
-compete on speed with a raw model; it competes on what survives an audit.
+This is slow for a chatbot and fine for a controller. I am not competing
+with a raw model on speed. I am competing on what survives an audit.

@@ -47,8 +47,8 @@ and shared folders were invisible to retrieval while visible in the tree.
 | Skill poisoning | 2 | A shared skill cannot exfiltrate through tool arguments |
 | Error handling | 2 | Errors do not leak other tenants' identifiers |
 
-Writing the RLS pins, I found two pre-existing gaps: one retrieval function was
-executable by the anonymous role, and the notes table had no pin.
+Writing the RLS pins, I found two pre-existing gaps: one retrieval function
+was executable by the anonymous role, and the notes table had no pin.
 
 ## Secrets
 

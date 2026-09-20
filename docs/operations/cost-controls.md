@@ -54,5 +54,6 @@ Switching chat providers in production broke three things that were not
 obviously provider-specific: a max-tokens variable the new model rejected, a
 citation-check model id in the old provider's naming scheme (every citation
 grade came back as verification failed), and a sub-agent model id in the
-same scheme. My rule now: after any provider switch, sweep every model and token
-variable, not just the chat ones, and confirm a new deployment went active.
+same scheme. My rule now: after any provider switch, sweep every model and
+token variable, not just the chat ones, and confirm a new deployment went
+active.

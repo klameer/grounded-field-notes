@@ -8,8 +8,9 @@ Status: Accepted
 Retrieval is hybrid: Postgres full-text search and pgvector similarity, fused
 by reciprocal rank fusion, then a cross-encoder rerank. The rerank stage had
 been in the code from the start. Its base URL setting was empty, and an empty
-base URL is the disable switch. The reranker had never run. I found this by writing the retrieval eval to
-measure something else and noticing the off and on numbers matched.
+base URL is the disable switch. The reranker had never run. I found this
+by writing the retrieval eval to measure something else and noticing the
+off and on numbers matched.
 
 Turning it on was cheap to test because the retrieval-only eval scores
 hit@1, hit@3, hit@k and MRR against expected sources with no chat and no
