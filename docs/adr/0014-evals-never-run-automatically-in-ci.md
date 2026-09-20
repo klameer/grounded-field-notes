@@ -27,7 +27,7 @@ gate flaps.
 ## Consequences
 
 - No flaky red builds from model variance.
-- The discipline has to be human. The compensating rule is that no demo
+- The discipline has to be mine. The compensating rule is that no demo
   happens without a clean three-run gate, and the eval results directory
   shows whether that rule is being kept.
 - Cost per full local suite is roughly a dollar and a half in reranker

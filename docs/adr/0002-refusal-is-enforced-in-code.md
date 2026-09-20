@@ -6,8 +6,8 @@ Status: Accepted
 ## Context
 
 Asking a model to "only give numbers you can cite" works most of the time.
-I have signed off board packs. Most of the time is not good enough. A prompt instruction is
-a request. A check is a guarantee.
+I have signed off board packs. Most of the time is not good enough. A
+prompt instruction is a request. A check is a guarantee.
 
 ## Decision
 

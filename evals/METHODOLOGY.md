@@ -1,6 +1,6 @@
 # Evaluation methodology
 
-Three instruments, each answering a different question. Results are
+Three instruments I built, each answering a different question. Results are
 committed as dated files under [results/](results/) so the history lives in
 git.
 

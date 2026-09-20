@@ -11,5 +11,7 @@ date.
   and PII notes, observability, deployment, cost controls and testing
   notes, evaluation methodology, Board Pack Test v1.0.1 baseline results,
   golden-suite history, reranker ablation.
+- Incidents page and "what I would do differently" added the same day;
+  operations notes trimmed to incidents plus a detail block.
 - Screenshots pending: cited-cell highlight, trust-chain strip, refusal,
   evals page, a Langfuse trace.

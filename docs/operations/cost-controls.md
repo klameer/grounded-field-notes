@@ -1,7 +1,7 @@
 # Cost controls
 
-Every number here is measured, with the date. Undated cost numbers are
-marketing.
+Every number here is one I measured, with the date. Undated cost numbers
+are marketing.
 
 ## Where the money goes
 
@@ -54,5 +54,5 @@ Switching chat providers in production broke three things that were not
 obviously provider-specific: a max-tokens variable the new model rejected, a
 citation-check model id in the old provider's naming scheme (every citation
 grade came back as verification failed), and a sub-agent model id in the
-same scheme. Rule: after any provider switch, sweep every model and token
+same scheme. My rule now: after any provider switch, sweep every model and token
 variable, not just the chat ones, and confirm a new deployment went active.

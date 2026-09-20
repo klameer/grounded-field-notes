@@ -51,7 +51,7 @@ trace store: emails, phones, card shapes, API-key shapes.
 Surrogates must never touch a number that could be a figure. Early on the
 date-time surrogate rewrote "December FY26" in a question into a random
 fake date, and every date-bearing finance question on the hosted demo came
-back with "those dates match no document". Two fixes followed: a test that
+back with "those dates match no document". I made two fixes: a test that
 pins numerals through the anonymise and de-anonymise round trip (part of
 the trust-chain work), and a per-instance switch so a corpus that is
 entirely synthetic can run with redaction off.

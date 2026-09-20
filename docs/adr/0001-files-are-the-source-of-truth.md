@@ -46,7 +46,8 @@ into audit-grade confidence, which is worse than no answer.
 **A review queue relocates the problem.** The usual fix is a human review
 queue for extracted facts. That turns unbounded parsing complexity into
 unbounded review labour. It is the cost structure of every planning-system
-implementation I have run, and it never ends because the inputs never stop changing.
+implementation I have run, and it never ends because the inputs never stop
+changing.
 
 ## Consequences
 

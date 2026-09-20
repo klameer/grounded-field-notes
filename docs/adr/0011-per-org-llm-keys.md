@@ -28,6 +28,6 @@ bill. That means storing a third party's API key in the shared database.
   terms for the chat model, which is the part that sees their documents.
 - Rotating the master key means re-wrapping every row. Scripted, not yet
   needed.
-- A key-generation script existed in the repository before this work and
-  was wired to nothing. It was scaffolding, not a foundation, and this
-  decision is the first real use of encryption at rest in the application.
+- A key-generation script existed in the scaffold before this work and
+  was wired to nothing. I treated it as scaffolding, not a foundation.
+  This decision is the first real use of encryption at rest in the app.

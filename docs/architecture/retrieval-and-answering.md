@@ -25,7 +25,7 @@ reach outside the caller's scope.
 **Authority weighting** is a filename-signal pass: documents whose names
 say legacy, draft, superseded, or that have a higher-versioned sibling, are
 demoted before rerank. It reorders and never filters, and it stands down
-when the question itself is about versions or drafts. It exists because of
+when the question itself is about versions or drafts. I added it because of
 one benchmark question where the product cited a superseded tracker whose
 figure happened to be right, and the ruling was that a superseded document
 is not a valid source (ADR 0013).
@@ -81,5 +81,5 @@ Tokens per turn average about 25,000, almost all prompt (a sampled turn:
 17,662 prompt, 271 completion). Prompt caching takes about 77 percent of
 that off the bill; see [cost controls](../operations/cost-controls.md).
 
-This is slow for a chatbot and fine for a controller. The product does not
+This is slow for a chatbot and fine for a controller. I do not
 compete on speed with a raw model; it competes on what survives an audit.

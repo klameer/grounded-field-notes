@@ -5,8 +5,9 @@ Status: Accepted
 
 ## Context
 
-I wanted analysts to be able to add their own commentary to the corpus: "the Q3 dip is the
-warehouse move", "ignore the legacy tracker after May". Useful context, but
+I wanted analysts to be able to add their own commentary to the corpus:
+"the Q3 dip is the warehouse move", "ignore the legacy tracker after May".
+Useful context, but
 a note is an opinion and a spreadsheet is a record. If both enter the same
 retrieval pool with equal weight, an unvalidated note gets cited with the
 same authority as an audited workbook. The design problem was trust, not

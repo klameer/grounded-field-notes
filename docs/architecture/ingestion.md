@@ -25,7 +25,7 @@ row label three cells left, the column header two rows up, the merged
 header above that, the sheet name, the version in the file name. Docling
 handles that acceptably for a PDF table and badly for a workbook.
 
-So workbooks go through a native extractor: every sheet is kept as an
+So I wrote a native extractor for workbooks: every sheet is kept as an
 intact grid, every cell carries its A1 reference, values are the formatted
 values a reader would see, and formula cells are recalculated first (an
 early corpus had every formula cell ingested as empty, which is a silent
@@ -45,7 +45,7 @@ citation be exact without making the embedding worse.
 The simple fallback is a recursive character splitter at 1,000 with 200
 overlap, kept for comparison.
 
-## Hardening that was learned, not designed
+## Hardening I learned, not designed
 
 | Problem seen | What was added |
 |---|---|

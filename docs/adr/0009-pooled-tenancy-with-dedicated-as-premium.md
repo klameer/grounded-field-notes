@@ -5,8 +5,8 @@ Status: Accepted. Supersedes [0003](0003-per-customer-instances.md).
 
 ## Context
 
-Eleven days after deciding on one instance per customer (0003), the cost of
-that decision was visible: every migration is a manual fan-out, there is no
+Eleven days after I decided on one instance per customer (0003), the cost
+of that decision was visible: every migration is a manual fan-out, there is no
 instance registry, and the demo instance had already drifted from the code.
 Rough sums: twenty small tenants on their own instances cost upwards of $600
 a month before any of them pays; pooled on one larger database they cost
@@ -46,7 +46,7 @@ Inside the pool, isolation is enforced in three layers:
   per-process semaphores multiply across replicas.
 - Verified by a twelve-test isolation suite (same-org retrieve and cite,
   cross-org wall, unshare revokes) plus security drift pins on function
-  grants. Writing the pins found two pre-existing gaps: one retrieval
+  grants. Writing the pins, I found two pre-existing gaps: one retrieval
   function was executable by the anonymous role, and one table had no pin.
 - The security story keeps its "dedicated deployment available" claim
   because it is true. It drops "no shared infrastructure" as a default

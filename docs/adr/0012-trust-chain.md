@@ -26,7 +26,7 @@ document  →  extraction  →  computation  →  answer
  the file     provenance     calculator     (ADR 0002)
 ```
 
-Built in one day on a branch, merged five days later:
+I built it in one day on a branch and merged it five days later:
 
 1. **Deterministic calculator.** Arithmetic in answers runs in code. The
    model proposes the expression and the input bindings; the calculator
