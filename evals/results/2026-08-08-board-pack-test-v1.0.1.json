@@ -1,0 +1,23 @@
+{
+  "benchmark": "The Board Pack Test",
+  "pack_version": "1.0.1",
+  "run_date": "2026-08-08",
+  "adjudicated": "2026-08-08",
+  "contamination": "pre-publication",
+  "protocol": {
+    "questions": 25,
+    "runs_per_cell": 3,
+    "statistic": "median",
+    "auto_max": 81,
+    "final_max": 100
+  },
+  "cells": [
+    {"agent": "Grounded v2", "model": "gpt-5.5", "auto_runs": [81, 79, 81], "auto_median": 81, "final_median": 99, "tiers": {"lookup": 24, "cross_doc": 15, "compute": 15, "version": 12, "refusal": 15}, "citations_confirmable": "59/60", "documents_seen": 32},
+    {"agent": "Grounded v2", "model": "claude-opus-5", "auto_runs": [81, 81, 81], "auto_median": 81, "final_median": 99, "tiers": {"lookup": 24, "cross_doc": 15, "compute": 15, "version": 12, "refusal": 15}, "citations_confirmable": "60/60", "documents_seen": 32},
+    {"agent": "raw + code interpreter", "model": "gpt-5.5", "auto_runs": [74, 69, 71], "auto_median": 71, "final_median": 98, "tiers": {"lookup": 21, "cross_doc": 14, "compute": 13, "version": 10, "refusal": 15}, "citations_confirmable": "53/60", "documents_seen": 34},
+    {"agent": "Grounded v1", "model": "gpt-5.5", "auto_runs": [66, 68, 68], "auto_median": 68, "final_median": 95, "tiers": {"lookup": 23, "cross_doc": 15, "compute": 15, "version": 12, "refusal": 3}, "citations_confirmable": "57/60", "documents_seen": 32},
+    {"agent": "Grounded v1", "model": "claude-opus-5", "auto_runs": [69, 66, 66], "auto_median": 66, "final_median": 99, "tiers": {"lookup": 24, "cross_doc": 15, "compute": 15, "version": 12, "refusal": 0}, "citations_confirmable": "60/60", "documents_seen": 32},
+    {"agent": "raw + code sandbox", "model": "claude-opus-5", "auto_runs": [68, 66, 66], "auto_median": 66, "final_median": 100, "tiers": {"lookup": 24, "cross_doc": 15, "compute": 15, "version": 12, "refusal": 0}, "citations_confirmable": "59/60", "documents_seen": 34}
+  ],
+  "source": "https://github.com/klameer/test-your-finance-llm/tree/main/results"
+}
