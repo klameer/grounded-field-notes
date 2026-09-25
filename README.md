@@ -1,5 +1,8 @@
 # Grounded: field notes
 
+**Review the project:** [case study and five-minute reading path](CASE_STUDY.md) ·
+[my contribution and upstream work](PROVENANCE.md) · [incidents](docs/incidents.md).
+
 Engineering notes on a production retrieval-augmented-generation system for
 finance teams. Decision records, architecture, evaluation results, cost and
 latency measurements, and the incidents that shaped them. No application
@@ -12,24 +15,31 @@ computation whose inputs do. The product site is
 [codelessops.com](https://codelessops.com). This repository is the
 engineering record behind it.
 
-## Headline numbers
+## Historical measurements
+
+**Grader correction:** the benchmark's original automatic grader has known
+false-positive paths in numeric matching, citation checking and refusal
+handling. The table below records that historical grader and adjudication.
+See the benchmark's [versioned grading work](https://github.com/klameer/test-your-finance-llm/tree/main/grading)
+for the corrected checks and saved-submission regrade. These figures should
+not be presented as a current independent verification result.
 
 On the [Board Pack Test](https://github.com/klameer/test-your-finance-llm),
 a public benchmark of 25 questions over 34 finance documents with a
 deterministic grader, run 2026-08-08 before publication:
 
-| Agent | Machine-verifiable points (of 81) | Citations a machine can confirm |
+| Agent | Legacy auto points (of 81) | Historical citation-check count |
 |---|---|---|
 | Grounded v2 on Claude Opus 5 | **81**, zero variance across 3 runs | 60 / 60 |
 | Grounded v2 on GPT-5.5 | **81** | 59 / 60 |
 | GPT-5.5, raw with code interpreter | 71 | 53 / 60 |
 | Claude Opus 5, raw with code sandbox | 66 | 59 / 60 |
 
-After a human judgment pass every frontier tool lands between 95 and 100,
-and the best raw model beat the product by one point. The product's edge
-is in what survives verification with no human in the loop, which is the
-point. Full table, conditions and the rulings that went against the
-product: [evals/results](evals/results/2026-08-08-board-pack-test-v1.0.1.md).
+After the original human judgment pass every frontier tool landed between
+95 and 100, and the best raw model beat the product by one point. The
+original interpretation of the automatic-score advantage needs to be read
+alongside the grader correction above. Full table, conditions and rulings:
+[evals/results](evals/results/2026-08-08-board-pack-test-v1.0.1.md).
 
 | Measure | Value | Source |
 |---|---|---|
