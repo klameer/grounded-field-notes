@@ -1,5 +1,7 @@
 # Board Pack Test v1.0.1, baseline runs
 
+**Historical record:** the original automatic grader has known numeric, citation and refusal-check weaknesses. These dated results and their original interpretation are retained for provenance. See the benchmark's [versioned grading work](https://github.com/klameer/test-your-finance-llm/tree/main/grading); these are not current independent verification claims.
+
 Run 2026-08-08, before the benchmark was published, so contamination-free.
 25 questions, 3 independent single-pass runs per cell, medians. Adjudicated
 under pre-registered rules the same day. Machine-readable rows in
